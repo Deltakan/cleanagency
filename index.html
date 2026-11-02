@@ -498,12 +498,12 @@ setTimeout(function () { if (!window.__cleanOk) document.documentElement.classLi
 
       <!--
         FORMULAIRE — sans serveur à gérer :
-        - Tant que data-endpoint contient des [crochets], le bouton ouvre le mail du visiteur avec sa demande déjà rédigée.
-        - Pour recevoir les demandes directement dans votre boîte mail : créez un formulaire gratuit chez Formspree ou Web3Forms,
-          puis collez l’adresse fournie dans data-endpoint (voir README.md).
+        - data-endpoint est l’adresse du formulaire Formspree : les demandes arrivent directement dans votre boîte mail.
+        - Si data-endpoint est vide ou contient des [crochets], le bouton ouvre à la place le mail du visiteur avec sa demande déjà rédigée.
+        - Pour changer de service (Formspree, Web3Forms…), collez la nouvelle adresse dans data-endpoint (voir README.md).
       -->
       <form class="formulaire" id="formulaire-devis" action="mailto:bonnetn58@gmail.com" method="post" enctype="text/plain" novalidate
-            data-endpoint="[URL_DU_SERVICE_DE_FORMULAIRE]" data-apparition="carte">
+            data-endpoint="https://formspree.io/f/mzeekygr" data-apparition="carte">
         <p class="formulaire__titre titre">Votre demande</p>
 
         <div class="champ">
